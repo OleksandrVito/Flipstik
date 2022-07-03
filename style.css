@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-height: -moz-available;
+    max-height: -webkit-fill-available;
+    max-height: fill-available;
+}
+
+.container {
+    width: 100vw;
+    height: 95vh;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    background: url(./picture.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-size: 80px;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.congrats {
+    margin-top: 150px;
+    margin-bottom: 0;
+    color: rgba(211, 67, 82, 255);
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: none;
+    box-shadow: 0 0 20px rgba(105, 171, 223, 0.5),
+        0 0 25px rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    width: 70px;
+    height: 50px;
+    font-size: 20px;
+    background: none;
+}
+
+.mute {
+    display: none;
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: 'The Nautigal', cursive;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.volume img {
+    width: 30px;
+}
+.mute img {
+    width: 29px;
+}
+
+.grid {
+    width: 300px;
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(3, 100px);
+    margin: 0 auto;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-top: -120px;
+}
+.block {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: transparent;
+}
+
+.card {
+    perspective: 600px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: transparent;
+}
+
+.back,
+.font {
+    transition: 10s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: 0.75s;
+}
+
+.font {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+.back {
+    position: absolute;
+    background-image: url(./9.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
