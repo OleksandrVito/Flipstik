@@ -239,14 +239,19 @@ function congratulations() {
 
         setTimeout(() => {
             congrats.innerHTML = '';
-            randomBackground();
-            arrCard.forEach((element) => {
-                element.style.visibility = 'visible';
-            });
-            for (const o of backCard) {
-                o.style.visibility = 'visible';
-            }
-        }, 3000);
+            setTimeout(() => {
+                randomBackground();
+                arrCard.forEach((element) => {
+                    element.style.visibility = 'visible';
+                });
+
+                for (let i = 0; i < backCard.length; i++) {
+                    setInterval(() => {
+                        backCard[i].style.visibility = 'visible';
+                    }, `${i}00`);
+                }
+            }, 500);
+        }, 2500);
     }
 }
 congratulations();
