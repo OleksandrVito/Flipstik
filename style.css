@@ -1,21 +1,25 @@
 body {
     padding: 0;
     margin: 0;
-    max-height: -moz-available;
-    max-height: -webkit-fill-available;
-    max-height: fill-available;
-}
-
-.container {
-    width: 100vw;
-    height: 95vh;
-    text-align: center;
-    padding-top: 30px;
-    margin: 0;
     background: url(./picture.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+}
+html {
+    height: fill-available;
+    height: -webkit-fill-available;
+}
+.container {
+    width: 100vw;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+
     font-size: 80px;
     color: white;
     font-family: 'The Nautigal', cursive;
